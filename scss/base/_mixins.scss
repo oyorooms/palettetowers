@@ -1,0 +1,84 @@
+%h1{
+  font-family: $font-bold;
+  font-size: 62px;
+}
+%h2{
+  font-family: $font-bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  @media only screen and (max-width: 991px){
+    font-size: 32px;
+  }
+}
+h2{
+  font-family: $font-bold;
+  font-size: 40px;
+  text-transform: uppercase;
+  @media only screen and (max-width: 991px){
+    font-size: 32px;
+  }
+}
+p{
+  font-size: 24px;
+  font-family: $font-regular;
+  @media only screen and (max-width: 767px){
+    font-size: 16px;
+  }
+}
+.text-1{
+  font-family: $font-regular;
+  font-size: 16px;
+}
+.text-2{
+  font-family: $font-regular;
+  font-size: 14px;
+}
+%h4{
+  font-family: $font-bold;
+  font-size: 32px;
+}
+%h5{
+  font-family: $font-bold;
+  font-size: 25px;
+}
+h6{
+  font-family: $font-bold;
+  font-size: 20px;
+}
+
+
+%button{
+  font-family: $font-semi-bold;
+  font-size: 14px;
+}
+.caption-1{
+  font-family: $font-regular;
+  font-size: 12px;
+}
+%overline{
+  font-family: $font-bold;
+  font-size: 11px;
+}
+%micro{
+  font-family: $font-medium;
+  font-size: 9px;
+}
+
+.com-pad{
+  padding: 72px 96px;
+  @media only screen and (max-width: 991px){
+    padding: 52px 72px;
+  }
+  @media only screen and (max-width: 767px){
+    padding: 48px 16px;
+  }
+  &.spotlight-alternate{
+    padding-top: 24px;
+  }
+}
+.light-sec{
+  background-color: #F7F9FB;
+}
+.mar-top-24{
+  margin-top: 24px;
+}
