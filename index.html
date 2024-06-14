@@ -1,0 +1,1345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--bs-cs-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--owl-cs-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!--cs-cs-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="page">
+        <!--banner-sec-->
+        <div id="topSection" class="banner-section">
+            <div class="banner-bg">
+                <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="500">
+                            <img src="images/bannerBg1.png" class="w-100 deskContent" alt="...">
+                            <img src="images/bannerBgMob1.png" class="w-100 phoneContent" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="500">
+                            <img src="images/bannerBg2.png" class="w-100 deskContent" alt="...">
+                            <img src="images/bannerBgMob2.png" class="w-100 phoneContent" alt="...">
+                        </div>
+                        <div class="carousel-item " data-bs-interval="500">
+                            <img src="images/bannerBg3.png" class="w-100 deskContent" alt="...">
+                            <img src="images/bannerBgMob3.png" class="w-100 phoneContent" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overlay">
+            </div>
+            <div class="container">
+                <div class="frontBox">
+                    <div id="mainHeader" class="top-header">
+                        <div class="left-header">
+                            <div class="logo-top">
+                                <img src="images/whiteLogo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="right-header">
+                            <div class="callNo deskContent"><img src="images/headCall.png" alt="" srcset=""> <span>+971 44928889</span></div>
+                            <div class="emailId deskContent"><img src="images/headMail.png" alt="" srcset=""> <span>info@palettetowers.oyorooms.com</span></div>
+                            <div class="booking-btn deskContent">
+                                <a href="#topSection" class="btn btn-primary" id="bookingBtn"> Book now </a>
+                                <!-- <a href="#topSection"><span class="btn btn-primary" id="bookingBtn">Book now</span></a> -->
+                            </div>
+                            <div class="right-top-btn phoneContent">
+                                <button class="btn btn-primary" id="getBtn">Get in touch</button>
+                            </div>                          
+                        </div>
+                    </div>
+                    <div id="stickyHeader" class="top-header sticky-header">
+                        <div class="left-header">
+                            <div class="logo-top">
+                                <img src="images/darkLogo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="right-header">
+                            <div class="callNo deskContent"><img src="images/headCall.png" alt="" srcset=""> <span>+971 44928889</span></div>
+                            <div class="emailId deskContent"><img src="images/headMail.png" alt="" srcset=""> <span>info@palettetowers.oyorooms.com</span></div>
+                            <div class="booking-btn deskContent">
+                                <a href="#topSection" class="btn btn-primary" id="bookingBtn"> Book now </a>
+                                <!-- <a href="#topSection"><span class="btn btn-primary" id="bookingBtn">Book now</span></a> -->
+                            </div>
+                            <div class="right-top-btn phoneContent">
+                                <button class="btn btn-primary" id="getBtnSticky">Get in touch</button>
+                            </div>                          
+                        </div>   
+                    </div>
+                    <div class="banner-content">
+                        <div class="row bnrContMob">
+                            <div class="col-md-8">
+                                <div class="left-box ">
+                                    <div class="bottom-content">
+                                        <div class="heading">
+                                            <h2>Indulge in Abu Dhabi's extravagance!  </h2>
+                                        </div>
+                                        <p class="banner-subHeading">From your long term to short term stay - We've got you covered!</p>
+                                        <div class="banner-loc">
+                                            <div class="loaction-ping d-flex">
+                                                <img src="images/loc-icon.png" alt="">
+                                                <p class="loc-sapace">Palette Towers</p>
+                                            </div>
+                                            <a href="https://maps.app.goo.gl/7cfgWZ9rZPF644vc8" class="viewMaplink" target="_blank">View on map</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+                                <div class="right-box">
+                                    <div id="formOverlay" class="overlay phoneContent"></div>
+                                    <div class="submitform">
+                                        <form id="getForm">
+                                            <div class="form-head">
+                                                <h4 class="form-heading">Let us help with your booking</h4>
+                                                <img src="images/close-btn.png" id="closeFormBtn"
+                                                    class="from-close phoneContent" />
+                                            </div>
+
+                                            <div class="my-4">
+                                                <input type="text" class="form-control" placeholder="Name" id="name">
+                                                <span id="name_error">Please enter your name</span>
+                                            </div>
+                                            <div class="mb-4">
+                                                <input type="number" class="form-control" id="mobile"
+                                                    placeholder="Number">
+                                                <span id="mobile_error">Please enter valid number</span>
+                                            </div>
+                                            <button type="button" class="btn btn-primary d-block w-100"
+                                                onclick="formSubmit();">Submit</button>
+                                        </form>
+                                        <div id="getFormSubmit" class="afterSubmit">
+                                            <img src="images/checkTick.gif" alt="submitTick"
+                                                style="width:99px;height:99px;">
+                                            <h3 class="submit-heading">Thanks for your interest!</h4>
+                                                <p class="submit-text">Our Tourist club expert will connect with you
+                                                    shortly!</p>
+                                                <a href="javascript:submitanother()" class="submit-another">Share
+                                                    another response</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Experience city-Sec Desktop Content-->
+        <section class="experience-city-sec deskContent">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="tab-hading my-4">
+                            <h4>Experience city living at its best!</h4>
+                        </div>
+                        <div class="left-tab">
+                            <button class="tabActive tablinks " id="location-centeral"><img src="images/tab-map.png"
+                                    class="tabActiveImg"> Central location</button>
+                            <button class="tablinks" id="interiors"><img src="images/sofa.png"> Stylish
+                                interiors</button>
+                            <button class="tablinks" id="panoramic"><img src="images/panoramic.png"> Panoramic
+                                views</button>
+                            <button class="tablinks" id="amenities"><img src="images/amenity.png"> Convenient
+                                amenities </button>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="right-tab-content">
+                            <div id="tabcontentOne" class="tabcontent" style="display: block;">
+                                <img src="images/tabImg1.png">
+                            </div>
+
+                            <div id="tabcontentTwo" class="tabcontent">
+                                <img src="images/tabImg2.png">
+                            </div>
+
+                            <div id="tabcontentThree" class="tabcontent">
+                                <img src="images/tabImg3.png">
+                            </div>
+                            <div id="tabcontentFour" class="tabcontent">
+                                <img src="images/tabImg4.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-----Experience city-Sec Phone Contentc-->
+
+        <section class="featuredAmenities-sec phoneContent">
+            <div class="container">
+                <div class="row">
+                    <div class="mywol-inner">
+                        <h4 class="my-owl-heading">Experience city living at its best!</h4>
+                        <div class="owl-carousel owl-theme" id="experienceCity">
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/tabImgMob1.png" alt="Snow" style="width:100%;">
+                                </div>
+
+                                <div class="owl-content experienceCity-cont">
+                                    <p class="features-name">Central location</p>
+                                    <div class="disc">
+                                        <img src="images/tab-map.png" />
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/tabImgMob2.png" alt="Snow" style="width:100%;">
+                                </div>
+
+                                <div class="owl-content experienceCity-cont">
+                                    <p class="features-name">Stylish interiors</p>
+                                    <div class="disc">
+                                        <img src="images/sofa.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/tabImgMob3.png" alt="Snow" style="width:100%;">
+                                </div>
+
+                                <div class="owl-content experienceCity-cont">
+                                    <p class="features-name">Panoramic views</p>
+                                    <div class="disc">
+                                        <img src="images/panoramic.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/tabImgMob4.png" alt="Snow" style="width:100%;">
+                                </div>
+
+                                <div class="owl-content experienceCity-cont">
+                                    <p class="features-name">Convenient amenities</p>
+                                    <div class="disc">
+                                        <img src="images/amenity.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!---New myAccommodation Coppy------->
+        <section class="myAccommodation">
+            <div class="container">
+                <div class="row">
+                    <div class="new-owl-inner">
+                        <div class="owl-header">
+                        <h3 class="accom-heading">Choose your perfect accommodation </h3>
+                        <p class="accom-subheading">Furnished to unfurnished, we've got it all</p>
+                        </div>
+                        <div class="owl-carousel owl-theme" id="perfectAccommodation">
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/accom1.png" alt="Snow" style="width:100%;">
+                                </div>
+                                <div class="owl-content ">
+                                    <div class="ht-top">
+                                        <p class="ht-heading">City View Furnished Apartment in Palette Tower in Tourist
+                                            Club Area
+                                        </p>
+                                        <ul class="ht-facilities">
+                                            <li><img src="images/facilities1.png"> <span>Air conditioner</span></li>
+                                            <li><img src="images/facilities2.png"> <span>Kitchen</span></li>
+                                            <li><img src="images/darkTick.png"> <span>Furnished</span></li>
+                                            <li class="free_cncl"><img src="images/greenTick.png"> <span>Free
+                                                    cancellation</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo oyo"><img src="images/h-logo1.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.oyorooms.com/ae/239188/"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                        <ul class="option-offer">
+                                            <li>Featured</li>
+                                            <li>Best offer</li>
+                                            <li><img src="images/greenTick.png" alt=""> <span>Pay at hotel</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo booking"><img src="images/h-logo2.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.booking.com/hotel/ae/city-view-apartment-in-palette-tower-in-tourist-club-area.en-gb.html?label=gen173nr-1BCAsoAkI5Y2l0eS12aWV3LWFwYXJ0bWVudC1pbi1wYWxldHRlLXRvd2VyLWluLXRvdXJpc3QtY2x1Yi1hcmVhSDNYBGhsiAEBmAEJuAEYyAEM2AEB6AEBiAIBqAIEuAKysoqzBsACAdICJGJhYjE1OTM5LTZkNmItNDE3MS1iOGY0LWUzZDA1NTAyMTZiZtgCBeACAQ&sid=8a4d32f3850a588333155cd9180ade34&dist=0&group_adults=3&group_children=0&keep_landing=1&no_rooms=1&sb_price_type=total&type=total&"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo agoda"><img src="images/h-logo3.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.agoda.com/en-in/city-view-furnished-apartment-in-palette-tower-in-tourist-club-area/hotel/all/abu-dhabi-ae.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1922885&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2024-06-7&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&tag=6f147157-60b8-459f-af1a-9935d44970e9&los=1&searchrequestid=7e03b6ea-4453-4f01-be7e-9aa24969690f&ds=JIa4AQGs8SJKMgD7"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/accom2.png" alt="Snow" style="width:100%;">
+                                </div>
+                                <div class="owl-content ">
+                                    <div class="ht-top">
+                                        <p class="ht-heading">Cozy 1 BHK Furnished Apartment in Palette Tower in Tourist Club Area
+                                        </p>
+                                        <ul class="ht-facilities">
+                                            <li><img src="images/facilities1.png"> <span>Air conditioner</span></li>
+                                            <li><img src="images/facilities2.png"> <span>Kitchen</span></li>
+                                            <li><img src="images/darkTick.png"> <span>Furnished</span></li>
+                                            <li class="free_cncl"> <img src="images/greenTick.png"> <span>Free
+                                                    cancellation</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo oyo"><img src="images/h-logo1.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.oyorooms.com/ae/239193/"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                        <ul class="option-offer">
+                                            <li>Featured</li>
+                                            <li>Best offer</li>
+                                            <li><img src="images/greenTick.png" alt=""> <span>Pay at hotel</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo booking"><img src="images/h-logo2.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.booking.com/hotel/ae/cozy-1-bhk-furnished-apartment-in-palette-tower-in-tourist-club-area.en-gb.html?label=gen173nr-1BCAsoAkJEY296eS0xLWJoay1mdXJuaXNoZWQtYXBhcnRtZW50LWluLXBhbGV0dGUtdG93ZXItaW4tdG91cmlzdC1jbHViLWFyZWFIM1gEaGyIAQGYAQm4ARjIAQzYAQHoAQGIAgGoAgS4AsayirMGwAIB0gIkNzIwYmI5NmQtZDMzMy00MjhiLWI4ZTctYmUxMDgxYjRkMGRh2AIF4AIB&sid=8a4d32f3850a588333155cd9180ade34&dist=0&group_adults=3&group_children=0&keep_landing=1&no_rooms=1&sb_price_type=total&type=total&"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo agoda"><img src="images/h-logo3.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.agoda.com/en-in/cozy-1-bhk-furnished-apartment-in-palette-tower-in-tourist-club-area/hotel/all/abu-dhabi-ae.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1922885&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2024-06-7&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&tag=6f147157-60b8-459f-af1a-9935d44970e9&los=1&searchrequestid=23815282-1c87-4aeb-bf87-9b855eee3b8b&ds=JIa4AQGs8SJKMgD7"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/accom3.png" alt="Snow" style="width:100%;">
+                                </div>
+                                <div class="owl-content ">
+                                    <div class="ht-top">
+                                        <p class="ht-heading">Spacious Furnished Apartment in Palette Tower in Tourist Club Area
+                                        </p>
+                                        <ul class="ht-facilities">
+                                            <li><img src="images/facilities1.png"> <span>Air conditioner</span></li>
+                                            <li><img src="images/facilities2.png"> <span>Kitchen</span></li>
+                                            <li><img src="images/facilities3.png"> <span>Spacious room</span></li>
+                                            <li><img src="images/darkTick.png"> <span>Furnished</span></li>
+                                            <li class="free_cncl"> <img src="images/greenTick.png"> <span>Free
+                                                    cancellation</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo oyo"><img src="images/h-logo1.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.oyorooms.com/ae/239196/"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                        <ul class="option-offer">
+                                            <li>Featured</li>
+                                            <li>Best offer</li>
+                                            <li><img src="images/greenTick.png" alt=""> <span>Pay at hotel</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo booking"><img src="images/h-logo2.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.booking.com/hotel/ae/spacious-furnished-apartment-in-palette-tower-in-tourist-club-area.en-gb.html?label=gen173nr-1BCAsoAkJCc3BhY2lvdXMtZnVybmlzaGVkLWFwYXJ0bWVudC1pbi1wYWxldHRlLXRvd2VyLWluLXRvdXJpc3QtY2x1Yi1hcmVhSDNYBGhsiAEBmAEJuAEYyAEM2AEB6AEBiAIBqAIEuALVsoqzBsACAdICJGNlOWM4Y2UwLTU2MzAtNDRlZS05NTMwLTMzMjNiOTA3ZmRjMtgCBeACAQ&sid=8a4d32f3850a588333155cd9180ade34&dist=0&group_adults=3&group_children=0&keep_landing=1&no_rooms=1&sb_price_type=total&type=total&"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo agoda"><img src="images/h-logo3.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.agoda.com/en-in/spacious-furnished-apartment-in-palette-tower-in-tourist-club-area/hotel/all/abu-dhabi-ae.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1922885&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2024-06-7&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&tag=6f147157-60b8-459f-af1a-9935d44970e9&los=1&searchrequestid=45302615-2f03-422d-a06c-89fe3472a48b&ds=JIa4AQGs8SJKMgD7"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/accom4.png" alt="Snow" style="width:100%;">
+                                </div>
+                                <div class="owl-content ">
+                                    <div class="ht-top">
+                                        <p class="ht-heading">Panoramic View Furnished Apartment in Palette Tower in Tourist Club Area
+                                        </p>
+                                        <ul class="ht-facilities">
+                                            <li><img src="images/facilities1.png"> <span>Air conditioner</span></li>
+                                            <li><img src="images/facilities2.png"> <span>Kitchen</span></li>
+                                            <li><img src="images/darkTick.png"> <span>Furnished</span></li>
+                                            <li class="free_cncl"> <img src="images/greenTick.png"> <span>Free
+                                                    cancellation</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo oyo"><img src="images/h-logo1.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.oyorooms.com/ae/239197/"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                        <ul class="option-offer">
+                                            <li>Featured</li>
+                                            <li>Best offer</li>
+                                            <li><img src="images/greenTick.png" alt=""> <span>Pay at hotel</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo booking"><img src="images/h-logo2.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.booking.com/hotel/ae/panoramic-view-furnished-apartment-in-palette-tower-in-tourist-club-area.en-gb.html?label=gen173nr-1BCAsoAkJIcGFub3JhbWljLXZpZXctZnVybmlzaGVkLWFwYXJ0bWVudC1pbi1wYWxldHRlLXRvd2VyLWluLXRvdXJpc3QtY2x1Yi1hcmVhSDNYBGhsiAEBmAEJuAEYyAEM2AEB6AEBiAIBqAIEuALisoqzBsACAdICJGFhZjJmZTNmLWU1MDgtNDE1Zi05NjkxLWE0Y2YxNDViYjliMdgCBeACAQ&sid=8a4d32f3850a588333155cd9180ade34&dist=0&group_adults=3&group_children=0&keep_landing=1&no_rooms=1&sb_price_type=total&type=total&"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo agoda"><img src="images/h-logo3.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.agoda.com/en-in/panoramic-view-furnished-apartment-in-palette-tower-in-tourist-club-area/hotel/all/abu-dhabi-ae.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1922885&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2024-06-7&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&tag=6f147157-60b8-459f-af1a-9935d44970e9&los=1&searchrequestid=ea40a242-3e12-47f9-858d-62d933f02072"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/accom5.png" alt="Snow" style="width:100%;">
+                                </div>
+                                <div class="owl-content ">
+                                    <div class="ht-top">
+                                        <p class="ht-heading">Spacious Apartment in Palette Tower in Tourist Club Area
+                                        </p>
+                                        <ul class="ht-facilities">
+                                            <li><img src="images/facilities1.png"> <span>Air conditioner</span></li>
+                                            <li><img src="images/facilities2.png"> <span>Kitchen</span></li>
+                                            <li><img src="images/facilities3.png"> <span>Spacious room</span></li>
+                                            <li class="free_cncl"> <img src="images/greenTick.png"> <span>Free
+                                                    cancellation</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo oyo"><img src="images/h-logo1.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.oyorooms.com/ae/239162/"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                        <ul class="option-offer">
+                                            <li>Featured</li>
+                                            <li>Best offer</li>
+                                            <li><img src="images/greenTick.png" alt=""> <span>Pay at hotel</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo booking"><img src="images/h-logo2.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.booking.com/hotel/ae/spacious-apartment-in-palette-tower-in-tourist-club-area.en-gb.html?label=gen173nr-1BCAsoAkI4c3BhY2lvdXMtYXBhcnRtZW50LWluLXBhbGV0dGUtdG93ZXItaW4tdG91cmlzdC1jbHViLWFyZWFIM1gEaGyIAQGYAQm4ARjIAQzYAQHoAQGIAgGoAgS4AtixirMGwAIB0gIkYjYxMWRhNjMtYWY1NC00ZWRjLWE3NjEtNjY4ODczYzJhZDNj2AIF4AIB&sid=8a4d32f3850a588333155cd9180ade34&dist=0&group_adults=3&group_children=0&keep_landing=1&no_rooms=1&sb_price_type=total&type=total&"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo agoda"><img src="images/h-logo3.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.agoda.com/en-in/spacious-apartment-in-palette-tower-in-tourist-club-area/hotel/all/abu-dhabi-ae.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1922885&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2024-06-7&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&tag=6f147157-60b8-459f-af1a-9935d44970e9&los=1&searchrequestid=f95bb5dd-726e-4d1e-b5b6-dc46c05f1fef"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/accom6.png" alt="Snow" style="width:100%;">
+                                </div>
+                                <div class="owl-content ">
+                                    <div class="ht-top">
+                                        <p class="ht-heading">Cozy 1 BHK Apartment in Palette Tower in Tourist Club Area
+                                        </p>
+                                        <ul class="ht-facilities">
+                                            <li><img src="images/facilities1.png"> <span>Air conditioner</span></li>
+                                            <li><img src="images/facilities2.png"> <span>Kitchen</span></li>
+                                            <li><img src="images/facilities3.png"> <span>Spacious room</span></li>
+                                            <li class="free_cncl"> <img src="images/greenTick.png"> <span>Free
+                                                    cancellation</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo oyo"><img src="images/h-logo1.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.oyorooms.com/ae/239164/"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                        <ul class="option-offer">
+                                            <li>Featured</li>
+                                            <li>Best offer</li>
+                                            <li><img src="images/greenTick.png" alt=""> <span>Pay at hotel</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo booking"><img src="images/h-logo2.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.booking.com/hotel/ae/cozy-1-bhk-apartment-in-palette-tower-in-tourist-club-area.en-gb.html?label=gen173nr-1BCAsoAkI6Y296eS0xLWJoay1hcGFydG1lbnQtaW4tcGFsZXR0ZS10b3dlci1pbi10b3VyaXN0LWNsdWItYXJlYUgzWARobIgBAZgBCbgBGMgBDNgBAegBAYgCAagCBLgC67GKswbAAgHSAiRkYmFjZjY2ZC1lZDc2LTRjYzktOTBkNS1lMWJlYjVmMjYxZjDYAgXgAgE&sid=8a4d32f3850a588333155cd9180ade34&dist=0&group_adults=3&group_children=0&keep_landing=1&no_rooms=1&sb_price_type=total&type=total&"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo agoda"><img src="images/h-logo3.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.agoda.com/en-in/cozy-1-bhk-apartment-in-palette-tower-in-tourist-club-area/hotel/all/abu-dhabi-ae.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1922885&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2024-06-7&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&tag=6f147157-60b8-459f-af1a-9935d44970e9&los=1&searchrequestid=8efc9c0c-5b83-406f-b255-7c313f4b64da"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/accom7.png" alt="Snow" style="width:100%;">
+                                </div>
+                                <div class="owl-content ">
+                                    <div class="ht-top">
+                                        <p class="ht-heading">Panoramic View Apartment in Palette Tower in Tourist Club Area
+                                        </p>
+                                        <ul class="ht-facilities">
+                                            <li><img src="images/facilities1.png"> <span>Air conditioner</span></li>
+                                            <li><img src="images/facilities2.png"> <span>Kitchen</span></li>
+                                            <li><img src="images/facilities3.png"> <span>Spacious room</span></li>
+                                            <li class="free_cncl"> <img src="images/greenTick.png"> <span>Free
+                                                    cancellation</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo oyo"><img src="images/h-logo1.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.oyorooms.com/ae/239165/"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                        <ul class="option-offer">
+                                            <li>Featured</li>
+                                            <li>Best offer</li>
+                                            <li><img src="images/greenTick.png" alt=""> <span>Pay at hotel</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo booking"><img src="images/h-logo2.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.booking.com/hotel/ae/panoramic-view-apartment-in-palette-tower-in-tourist-club-area.en-gb.html?label=gen173nr-1BCAsoAkI-cGFub3JhbWljLXZpZXctYXBhcnRtZW50LWluLXBhbGV0dGUtdG93ZXItaW4tdG91cmlzdC1jbHViLWFyZWFIM1gEaGyIAQGYAQm4ARjIAQzYAQHoAQGIAgGoAgS4Av-xirMGwAIB0gIkNGNlZGNjYTctMDYxNy00MmU3LWE4NzAtZWM0MTI1Y2I4Zjdh2AIF4AIB&sid=8a4d32f3850a588333155cd9180ade34&dist=0&group_adults=3&group_children=0&keep_landing=1&no_rooms=1&sb_price_type=total&type=total&"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo agoda"><img src="images/h-logo3.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.agoda.com/en-in/panoramic-view-apartment-in-palette-tower-in-tourist-club-area/hotel/all/abu-dhabi-ae.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1922885&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2024-06-7&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&tag=6f147157-60b8-459f-af1a-9935d44970e9&los=1&searchrequestid=8620c485-7f12-4f72-979d-8ee384a2d9d2&ds=JIa4AQGs8SJKMgD7"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/accom8.png" alt="Snow" style="width:100%;">
+                                </div>
+                                <div class="owl-content ">
+                                    <div class="ht-top">
+                                        <p class="ht-heading">City View Apartment in Palette Tower in Tourist Club Area
+                                        </p>
+                                        <ul class="ht-facilities">
+                                            <li><img src="images/facilities1.png"> <span>Air conditioner</span></li>
+                                            <li><img src="images/facilities2.png"> <span>Kitchen</span></li>
+                                            <li><img src="images/darkTick.png"> <span>City view</span></li>
+                                            <li class="free_cncl"> <img src="images/greenTick.png"> <span>Free
+                                                    cancellation</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo oyo"><img src="images/h-logo1.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.oyorooms.com/ae/239166/"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                        <ul class="option-offer">
+                                            <li>Featured</li>
+                                            <li>Best offer</li>
+                                            <li><img src="images/greenTick.png" alt=""> <span>Pay at hotel</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo booking"><img src="images/h-logo2.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.booking.com/hotel/ae/city-view-apartment-in-palette-tower-in-tourist-club-area.en-gb.html?label=gen173nr-1BCAsoAkI5Y2l0eS12aWV3LWFwYXJ0bWVudC1pbi1wYWxldHRlLXRvd2VyLWluLXRvdXJpc3QtY2x1Yi1hcmVhSDNYBGhsiAEBmAEJuAEYyAEM2AEB6AEBiAIBqAIEuAKRsoqzBsACAdICJDM5NzI2NWU0LWJiNzctNDMxNi05YWY4LTVmNGJiNzI2M2Q2ONgCBeACAQ&sid=8a4d32f3850a588333155cd9180ade34&dist=0&group_adults=3&group_children=0&keep_landing=1&no_rooms=1&sb_price_type=total&type=total&"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo agoda"><img src="images/h-logo3.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.agoda.com/en-in/city-view-apartment-in-palette-tower-in-tourist-club-area/hotel/all/abu-dhabi-ae.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1922885&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2024-06-7&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&tag=6f147157-60b8-459f-af1a-9935d44970e9&los=1&searchrequestid=dd2525f0-8361-4b5d-bb2e-944c20ca29b9&ds=JIa4AQGs8SJKMgD7"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--featuredAmenities sec-->
+        <section class="featuredAmenities-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="mywol-inner">
+                        <h4 class="my-owl-heading">Featured amenities</h4>
+                        <div class="owl-carousel owl-theme" id="featuredAmenities">
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/featuredAmenities1.png" alt="Snow" style="width:100%;">
+                                </div>
+
+                                <div class="owl-content">
+                                    <p class="features-name">Panoramic views</p>
+                                    <!-- <div class="disc">
+                                    <h4>Panoramic views</h4>
+ 
+                                </div> -->
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/featuredAmenities2.png" alt="Snow" style="width:100%;">
+                                </div>
+
+                                <div class="owl-content">
+                                    <p class="features-name">Modern kitchen</p>
+                                    <!-- <div class="disc">
+                                    <h4>Modern kitchen</h4>
+                                </div> -->
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/featuredAmenities3.png" alt="Snow" style="width:100%;">
+                                </div>
+
+                                <div class="owl-content">
+                                    <p class="features-name">Basement parking</p>
+                                    <!-- <div class="disc">
+                                    <h4>Basement parking</h4>
+                                </div> -->
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/featuredAmenities4.png" alt="Snow" style="width:100%;">
+                                </div>
+
+                                <div class="owl-content">
+                                    <p class="features-name">Security system</p>
+                                    <!-- <div class="disc">
+                                    <h4>Security system</h4>
+                                </div> -->
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/featuredAmenities5.png" alt="Snow" style="width:100%;">
+                                </div>
+
+                                <div class="owl-content">
+                                    <p class="features-name">Centralised AC</p>
+                                    <!-- <div class="disc">
+                                    <h4>Security system</h4>
+                                </div> -->
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/featuredAmenities6.png" alt="Snow" style="width:100%;">
+                                </div>
+
+                                <div class="owl-content">
+                                    <p class="features-name">Maintenance Care </p>
+                                    <!-- <div class="disc">
+                                    <h4>Security system</h4>
+                                </div> -->
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/featuredAmenities7.png" alt="Snow" style="width:100%;">
+                                </div>
+
+                                <div class="owl-content">
+                                    <p class="features-name">Secure locks</p>
+                                    <!-- <div class="disc">
+                                    <h4>Security system</h4>
+                                </div> -->
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/featuredAmenities8.png" alt="Snow" style="width:100%;">
+                                </div>
+
+                                <div class="owl-content">
+                                    <p class="features-name">Prime location</p>
+                                    <!-- <div class="disc">
+                                    <h4>Security system</h4>
+                                </div> -->
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/featuredAmenities9.png" alt="Snow" style="width:100%;">
+                                </div>
+
+                                <div class="owl-content">
+                                    <p class="features-name">Accessible Transport</p>
+                                    <!-- <div class="disc">
+                                    <h4>Security system</h4>
+                                </div> -->
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/featuredAmenities10.png" alt="Snow" style="width:100%;">
+                                </div>
+
+                                <div class="owl-content">
+                                    <p class="features-name">Convenient Laundry</p>
+                                    <!-- <div class="disc">
+                                    <h4>Security system</h4>
+                                </div> -->
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------PopularPlaces Map-->
+         <div class="popular-places">
+         <div class="container">
+            <h3 class="popularplaces-heading">Popular places nearby</h3>
+           <div class="mapImg">
+             <a href="https://maps.app.goo.gl/7cfgWZ9rZPF644vc8" target="_blank"><img src="images/mapImg.png" alt="" class="deskContent">
+             <img src="images/mapImgMob.png" alt="" class="phoneContent"></a>
+           </div>
+          <div class="mapBottom">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="addBox">
+                        <h6 class="add-head">Address</h6>
+                        <div class="addLoc">
+                            <div class="addloc-img deskContent">
+                                <img src="images/addLoc.png" alt="">
+                            </div>
+                            <div class="address">
+                                <p>Plot-C20, Sector -E13, al Zahiyah Street Abu Dhabi, UAE</p>
+                                <a href="https://maps.app.goo.gl/7cfgWZ9rZPF644vc8" target="_blank" class="viewMap"><img src="images/viewMap.png" alt=""> <span>View on map</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="facilities-box">
+                        <ul class="add-facilities">
+                            <li class="facilities-img"><img src="images/bus.png" alt=""></li>
+                            <li class="facilities-text">
+                              <p class="facilities-name">Bus access to Abu Dhabi Airport</p>
+                              <p class="facilities-dis">300m</p>
+                            </li>
+                          </ul>
+                          <ul class="add-facilities deskContent">
+                              <li class="facilities-img"><img src="images/shopping-cart.png" alt=""></li>
+                              <li class="facilities-text">
+                                <p class="facilities-name">Abu Dhabi Mall</p>
+                                <p class="facilities-dis">10 minutes walk</p>
+                              </li>
+                            </ul>
+                            <ul class="add-facilities deskContent">
+                              <li class="facilities-img"><img src="images/shopping-cart.png" alt=""></li>
+                              <li class="facilities-text">
+                                <p class="facilities-name">Earthmart</p>
+                                <p class="facilities-dis">5 minutes walk</p>
+                              </li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="facilities-box">
+                        <ul class="add-facilities">
+                            <li class="facilities-img"><img src="images/shopping-cart.png" alt=""></li>
+                            <li class="facilities-text">
+                              <p class="facilities-name">Lulu Hypermarket</p>
+                              <p class="facilities-dis">5 minutes walk</p>
+                            </li>
+                          </ul>
+                          <ul class="add-facilities deskContent">
+                              <li class="facilities-img"><img src="images/book-open.png" alt=""></li>
+                              <li class="facilities-text">
+                                <p class="facilities-name">Abu Dhabi Grammar School</p>
+                                <p class="facilities-dis">Near by</p>
+                              </li>
+                            </ul>
+                            <ul class="add-facilities">
+                              <li class="facilities-img"><img src="images/first-aid.png" alt=""></li>
+                              <li class="facilities-text">
+                                <p class="facilities-name">Corniche Hospital</p>
+                                <p class="facilities-dis">7 minutes walk</p>
+                              </li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="facilities-box">
+                          <ul class="add-facilities">
+                              <li class="facilities-img"><img src="images/first-aid.png" alt=""></li>
+                              <li class="facilities-text">
+                                <p class="facilities-name">Life Pharmacy</p>
+                                <p class="facilities-dis">7 minutes walk</p>
+                              </li>
+                            </ul>
+                            <ul class="add-facilities">
+                              <li class="facilities-img"><img src="images/meal.png" alt=""></li>
+                              <li class="facilities-text">
+                                <p class="facilities-name">Multicuisine Restaurants</p>
+                                <p class="facilities-dis">5 minutes walk</p>
+                              </li>
+                            </ul>
+                            <ul class="add-facilities">
+                                <li class="facilities-img"><img src="images/gym.png" alt=""></li>
+                                <li class="facilities-text">
+                                  <p class="facilities-name">Body Lab Gym</p>
+                                  <p class="facilities-dis">2 minutes walk</p>
+                                </li>
+                              </ul>
+                    </div>
+                </div>
+            </div>
+          </div>
+         </div>
+         </div>
+         
+
+        <!---New ExploreCollection perfectPalett------->
+        <section class="myAccommodation explore-collection">
+            <div class="container">
+                <div class="row">
+                    <div class="new-owl-inner">
+                        <div class="owl-header">
+                            <h3 class="accom-heading">Explore collection</h3>
+                        <!-- <p class="accom-subheading">Furnished to unfurnished, we've got it all</p> -->
+                        </div>
+                        <div class="owl-carousel owl-theme" id="exploreCollection">
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/exploreCollection1.png" alt="Snow" style="width:100%;">
+                                </div>
+                                <div class="owl-content ">
+                                    <div class="ht-top">
+                                        <p class="ht-heading">Palette Resort Myrtle Beach</p>
+                                        <p class="ht-location">South Carolina, USA</p>
+                                         <ul class="ht-facilities">
+                                            <!-- <li><img src="images/facilities1.png"> <span>Air conditioner</span></li>
+                                            <li><img src="images/facilities2.png"> <span>Kitchen</span></li>
+                                            <li><img src="images/facilities3.png"> <span>Spacious room</span></li> -->
+                                            <li class="free_cncl"><img src="images/greenTick.png"> <span>Free
+                                                    cancellation</span></li>
+                                        </ul> 
+                                        
+                                    </div>
+									<div class="ht-options-box">
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo oyo"><img src="images/h-logo1.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.oyorooms.com/us/56004/"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                        <ul class="option-offer">
+                                            <li>Featured</li>
+                                            <li>Best offer</li>
+                                            <li><img src="images/greenTick.png" alt=""> <span>Pay at hotel</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo expedia"><img src="images/h-logo4.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.expedia.co.in/Myrtle-Beach-Hotels-Palette-Resort-Myrtle-Beach-By-OYO.h857981.Hotel-Information"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo booking"><img src="images/h-logo2.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.booking.com/hotel/us/atlantic-palms-boutique-resort.html"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo agoda"><img src="images/h-logo3.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.agoda.com/myrtle-beach-oceanfront-atlantic-palms-hotel-suites-condos_2/hotel/myrtle-beach-sc-us.html?cid=1844104&ds=HKg4NlMVrozuvhtn"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+									<div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo priceline"><img src="images/h-logo0.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.priceline.com/hotel-deals/h1269603/US/South-Carolina/Myrtle-Beach/Palette-Resort-Myrtle-Beach-by-OYO.html"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+									</div>
+								</div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/exploreCollection2.png" alt="Snow" style="width:100%;">
+                                </div>
+                                <div class="owl-content ">
+                                    <div class="ht-top">
+                                        <p class="ht-heading">Palette Siniya Island Resorts</p>
+                                        <p class="ht-location">Myrtle Beach, United States</p>
+                                        <ul class="ht-facilities">
+                                            <!-- <li><img src="images/facilities1.png"> <span>Air conditioner</span></li>
+                                            <li><img src="images/facilities2.png"> <span>Kitchen</span></li>
+                                            <li><img src="images/facilities3.png"> <span>Spacious room</span></li> -->
+                                            <li class="free_cncl"><img src="images/greenTick.png"> <span>Free
+                                                    cancellation</span></li>
+                                        </ul> 
+                                    </div>
+									<div class="ht-options-box">
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo oyo"><img src="images/h-logo1.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.oyorooms.com/ae/220575/"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                        <ul class="option-offer">
+                                            <li>Featured</li>
+                                            <li>Best offer</li>
+                                            <li><img src="images/greenTick.png" alt=""> <span>Pay at hotel</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo expedia"><img src="images/h-logo4.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.expedia.ae/Ras-Al-Khaimah-Hotels-Siniya-Island-Resorts.h99888681.Hotel-Information?chkin=2024-05-03&chkout=2024-05-07&x_pwa=1&rfrr=HSR&pwa_ts=1714731576639&referrerUrl=aHR0cHM6Ly93d3cuZXhwZWRpYS5hZS9Ib3RlbC1TZWFyY2g%3D&useRewards=false&rm1=a2&regionId=6025737&destination=Umm+al+Quwain%2C+Umm+al-Quwain%2C+United+Arab+Emirates&destType=MARKET&selected=99888681&latLong=25.552044%2C55.547498&sort=RECOMMENDED&top_dp=2016&top_cur=AED&userIntent=&selectedRoomType=323692978&selectedRatePlan=392559768&searchId=42d8e5d4-17f5-44ef-9e18-d5c1e55e82ba&propertyName=Palette+Siniya+Island+Resorts
+"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo booking"><img src="images/h-logo2.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.booking.com/hotel/ae/siniya-island-luxurious-camp-umm-al-quwain.en-gb.html?label=gen173nr-1BCAsoAkIqc2luaXlhLWlzbGFuZC1sdXh1cmlvdXMtY2FtcC11bW0tYWwtcXV3YWluSDNYBGhsiAEBmAEJuAEYyAEM2AEB6AEBiAIBqAIEuAKE89KxBsACAdICJGZjNWFmYWM3LThjMWQtNDA5YS1iZWE1LTQ3ZTQzNGRiOGZlNtgCBeACAQ&sid=f8d87bc72e9d1a348e8127ccb5c44742&dist=0&group_adults=2&keep_landing=1&sb_price_type=total&type=total&"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo agoda"><img src="images/h-logo3.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.agoda.com/siniya-island-leisure-campground/hotel/umm-al-quwain-ae.html?cid=1555740"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+									</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/exploreCollection3.png" alt="Snow" style="width:100%;">
+                                </div>
+                                <div class="owl-content ">
+                                    <div class="ht-top">
+                                        <p class="ht-heading">Palette Royal Reflections Hotel and Spa Dubai</p>
+                                        <p class="ht-location">Dubai, United Arab Emirates</p>
+                                        <ul class="ht-facilities">
+                                            <!-- <li><img src="images/facilities1.png"> <span>Air conditioner</span></li>
+                                            <li><img src="images/facilities2.png"> <span>Kitchen</span></li>
+                                            <li><img src="images/facilities3.png"> <span>Spacious room</span></li> -->
+                                            <li class="free_cncl"><img src="images/greenTick.png"> <span>Free
+                                                    cancellation</span></li>
+                                        </ul> 
+                                    </div>
+									<div class="ht-options-box">
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo oyo"><img src="images/h-logo1.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.oyorooms.com/ae/234883/"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                        <ul class="option-offer">
+                                            <li>Featured</li>
+                                            <li>Best offer</li>
+                                            <li><img src="images/greenTick.png" alt=""> <span>Pay at hotel</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo expedia"><img src="images/h-logo4.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.expedia.co.in/Dubai-Hotels-Reflections-Hotel-Dubai.h9062916.Hotel-Information"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo booking"><img src="images/h-logo2.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.booking.com/hotel/ae/reflections.en-gb.html?aid=304142&label=gen173nr-1FCAsoAkILcmVmbGVjdGlvbnNIM1gEaGyIAQGYAQm4ARjIAQzYAQHoAQH4AQuIAgGoAgS4ApP75LAGwAIB0gIkNmE5NGYzYzctMTI4My00MDNjLWJhZDUtMjRjNDA4NTI5MDVh2AIG4AIB&sid=d10437fe84fa2698861f917a0923b1a2&all_sr_blocks=0_0_2_0_0;checkin=2024-04-12;checkout=2024-04-13;dest_id=-782831;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=0_0_2_0_0;hpos=1;matching_block_id=0_0_2_0_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=0_0_2_0_0__26591;srepoch=1712930400;srpvid=40d0620ff0520125;type=total;ucfs=1&#hotelTmpl"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo agoda"><img src="images/h-logo3.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.agoda.com/reflections-hotel/hotel/dubai-ae.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1841706&numberOfBedrooms=&familyMode=false&adults=1&children=0&rooms=1&maxRooms=0&checkIn=2024-04-18&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=-1&showReviewSubmissionEntry=false%C2%A4cyCode%3DINR&isFreeOccSearch=false&tag=6f07d246-b95f-fe86-968c-ad6b0a6b2862&isCityHaveAsq=false&tspTypes=-1&los=1&searchrequestid=21e55e09-a9b1-497e-8a2b-0b2bbd5d400e"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+									<div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo makemytrip"><img src="images/h-logo5.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.makemytrip.com/hotels/hotel-details/?hotelId=201710051733155832&_uCurrency=INR&city=CTDUB&cmp=SEM%7CD%7CIH%7CG%7CHname%7CIH_Hname_TCPA_D%20T_Dubai%7C201710051733155832%7CRSA%7CRegular&country=UNI&gad_source=1&gclid=EAIaIQobChMIxMvqsJe1hQMVQh-DAx3IPgP9EAAYASAAEgIX_PD_BwE&lat=25.21993&lng=55.32356&locusId=CTDUB&locusType=city&rank=1&reference=hotel&roomStayQualifier=2e0e&searchText=Dubai&topHtlId=201710051733155832&type=city&mtkeys=6256765169516298011
+"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+									<div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo trip"><img src="images/h-logo6.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.trip.com/hotels/dubai-hotel-detail-2511919/palette-royal-reflections-hotel-and-spa-dubai/?cityId=220&checkIn=2024-04-09&checkOut=2024-04-10&adult=2&children=0&subStamp=3001547&crn=1&travelpurpose=0&curr=INR&fgt=1&hasAidInUrl=true&mincurr=INR&minprice=2660.96&link=book&hoteluniquekey=H4sIAAAAAAAAAOMK4GKSYBJi4mCUcuP4t-v2LVaL34IBHDMY16-YybiDkekiY-vrwB1yR80cHjJWi6xzf_jL3uEF46onjc8YO1mCdsgBZQUcFrAwLmTVjOk_9FXD2EGKx7cg0inSsMAlMD0rUYFRo_vYlQ1sHoxBbI6WjgYmplEyXMyOri6CDGDwwV6KOTTYRbGX03B6SO5F-yTW1DzdiIiMVv4uRiYPxlWMDJ8Y-ZANjDcEAHp6Yd6zAAAA&masterhotelid_tracelogid=bcb803953f254b8fa5e735304a0864aa&NewTaxDescForAmountshowtype0=F&detailFilters=17%257C1%7E17%7E1*80%257C2%257C0%7E80%7E2&hotelType=meta&trip_sub1=09_04_2024_1_localuniversal_2511919_IN_desktop_default_14207715252__1_0-LANG_EN-landing&locale=en-XX
+"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+									<div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo rehlat"><img src="images/h-logo7.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.rehlat.co/en/cheap-hotels/profile/Reflections-Hotel-Dubai-1348321?encrypted_payload=BAtaxAHI3M65LIAbaseAHI38M237LIAgpfAHI0LIAcAHI2081LIAciAHIA2024K04K02ALIAcoAHIA2024K04K03ALIAhcAHI1348321LIAshcAHIA5000027ALIArAHIEBAaAHI2LIAcdAHI0LIAcdaAHIEFLIAtpAHI1CFLIAsiAHI3LIAskAHIAALIAcldAHIAGoogleALIAspAHI164M7059LIAfpAHI41M887LIAmpAHI44M848LIAscAHIAaedALIAdtAHIA202403300428AC&CustomerCountry=IN&Currency=INR&Device=desktop&identifier=c077a54a-311c-4dde-b93a-a0ae23ea97e1__2024-03-30T04:28:18&utm_source=GoogleHotel&utm_medium=MetaHotels&utm_campaign=GoogleMetaHotels
+"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+									<div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo airbnb"><img src="images/h-logo8.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.airbnb.co.in/rooms/1126426698726161732?check_in=2024-04-12&check_out=2024-04-13&source_impression_id=p3_1712748328_u9vxz6%2FAO%2FAKCXT0&previous_page_section_name=1000&federated_search_id=dda74491-ed89-42aa-8ee1-dc6b0c68c27c
+"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+									</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/exploreCollection4.png" alt="Snow" style="width:100%;">
+                                </div>
+                                <div class="owl-content ">
+                                    <div class="ht-top">
+                                        <p class="ht-heading">Palette The Grand Morocc Hotel</p>
+                                        <p class="ht-location">Chiang Mai, Thailand</p>
+                                        <ul class="ht-facilities">
+                                            <!-- <li><img src="images/facilities1.png"> <span>Air conditioner</span></li>
+                                            <li><img src="images/facilities2.png"> <span>Kitchen</span></li>
+                                            <li><img src="images/facilities3.png"> <span>Spacious room</span></li> -->
+                                            <li class="free_cncl"><img src="images/greenTick.png"> <span>Free
+                                                    cancellation</span></li>
+                                        </ul> 
+                                    </div>
+									<div class="ht-options-box">
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo oyo"><img src="images/h-logo1.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.oyorooms.com/th/232528/"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                        <ul class="option-offer">
+                                            <li>Featured</li>
+                                            <li>Best offer</li>
+                                            <li><img src="images/greenTick.png" alt=""> <span>Pay at hotel</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo expedia"><img src="images/h-logo4.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.expedia.com/Mae-Rim-Hotels-The-Grand-Morocc-Hotel.h16309392.Hotel-Information"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo booking"><img src="images/h-logo2.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.booking.com/hotel/th/the-grand-morocc-residences.html?aid=304142&label=gen173nr-1FCAsoAkIGZXVyZWthSDNYBGhsiAEBmAExuAEYyAEM2AEB6AEB-AECiAIBqAIEuALr8tKxBsACAdICJDA3NTM3Y2QwLTdiYTktNDM5NC1hZGFhLWVjZWZmNGRkOWZjZdgCBeACAQ&sid=5221b99df8c96a1a6b200488304dda10&dest_id=1959122;dest_type=hotel;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1714731394;srpvid=27d0483d5ea0016b;type=total;ucfs=1&#hotelTmpl"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo agoda"><img src="images/h-logo3.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.agoda.com/the-grand-morocc-hotel/hotel/chiang-mai-th.html?finalPriceView=2&isShowMobileAppPrice=false&cid=-42&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2024-05-12&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=PHP&isFreeOccSearch=false&isCityHaveAsq=false&los=1&searchrequestid=de28b70e-860f-480c-92e2-133ac4f72eaa&ds=J7AtAcTQgtrZZmJz"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+									<div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo traveloka"><img src="images/h-logo10.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.traveloka.com/en-my/hotel/thailand/the-grand-morocc-hotel-1000000630925
+"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+									<div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo trip"><img src="images/h-logo6.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.trip.com/hotels/rim-tai-hotel-detail-6229792/palette-the-grand-morocc-hotel/
+"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+									<div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo ticket"><img src="images/h-logo9.png" alt=""></div>
+                                            <div class="option-link"><a href="https://en.tiket.com/hotel/thailand/oyo-75470-palette-the-grand-morocc-hotel-703001710751216376?adult=1&room=1&source=global_search
+"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+									</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="owl-image">
+                                    <img src="images/exploreCollection5.png" alt="Snow" style="width:100%;">
+                                </div>
+                                <div class="owl-content ">
+                                    <div class="ht-top">
+                                        <p class="ht-heading">Palette - Madhogarh</p>
+                                        <p class="ht-location">Jaipur, India </p>
+                                        <ul class="ht-facilities">
+                                            <!-- <li><img src="images/facilities1.png"> <span>Air conditioner</span></li>
+                                            <li><img src="images/facilities2.png"> <span>Kitchen</span></li>
+                                            <li><img src="images/facilities3.png"> <span>Spacious room</span></li> -->
+                                            <li class="free_cncl"><img src="images/greenTick.png"> <span>Free
+                                                    cancellation</span></li>
+                                        </ul> 
+                                    </div>
+									<div class="ht-options-box">
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo oyo"><img src="images/h-logo1.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.oyorooms.com/210420/"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                        <ul class="option-offer">
+                                            <li>Featured</li>
+                                            <li>Best offer</li>
+                                            <li><img src="images/greenTick.png" alt=""> <span>Pay at hotel</span></li>
+                                        </ul>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo makemytrip"><img src="images/h-logo5.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.makemytrip.com/hotels/palette_madhogarh-details-jaipur.html"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo booking"><img src="images/h-logo2.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.booking.com/hotel/in/palette-madhogarh.html?aid=2127559&label=metagha-link-LUIN-hotel-10001033_dev-desktop_los-1_bw-0_dow-Friday_defdate-1_room-0_gstadt-2_rateid-public_aud-0_gacid-_mcid-10_ppa-0_clrid-0_ad-0_gstkid-0_checkin-20240503_ppt-Cg&sid=d709b08fc25787fa78e6a45dd7ed5412&all_sr_blocks=1000103302_372833221_3_0_0;checkin=2024-05-03;checkout=2024-05-04;dest_id=-2098033;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;highlighted_blocks=1000103302_372833221_3_0_0;hpos=1;matching_block_id=1000103302_372833221_3_0_0;no_rooms=1;req_adults=2;req_children=0;room1=A%2CA;sb_price_type=total;sr_order=popularity;sr_pri_blocks=1000103302_372833221_3_0_0__381106;srepoch=1714716234;srpvid=85f12a97a9d4027f;type=total;ucfs=1&#hotelTmpl"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="ht-option">
+                                        <div class="option-top">
+                                            <div class="option-logo agoda"><img src="images/h-logo3.png" alt=""></div>
+                                            <div class="option-link"><a href="https://www.agoda.com/palette-madhogarh/hotel/jaipur-in.html?finalPriceView=1&isShowMobileAppPrice=false&cid=1918349&numberOfBedrooms=&familyMode=false&adults=2&children=0&rooms=1&maxRooms=0&checkIn=2024-05-3&isCalendarCallout=false&childAges=&numberOfGuest=0&missingChildAges=false&travellerType=1&showReviewSubmissionEntry=false&currencyCode=INR&isFreeOccSearch=false&isCityHaveAsq=false&pushId=CgYIgNLQsQYSBgiA9dWxBhgBIMzMqxMqDBgBKggiAggBKgIIBA==d34aed34-bb7b-1805-2e41-394e66b01656_20240503_11&los=1&searchrequestid=4fb221dd-47c3-4125-88e3-d49251e71ddb"><span>Go to site</span> <img
+                                                        src="images/goToSite.png" alt=""></a></div>
+                                        </div>
+                                    </div>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Contact Us sec-->
+        <section class="contactUs-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="contactbook-now d-flex align-items-center">
+                            <p>Contact us to book now</p>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="contact-media d-flex justify-content-evenly ">
+                            <div class="contact-media-item">
+                                <label>ADDRESS</label>
+                                <div class="contact-add inner-media d-flex justify-content-center align-items-start gap-2">
+                                    <img src="images/viewMapWhite.png" alt="" srcset="">
+                                    <p class="email add-text">Plot-C20, Sector -E13,<br/>Al Zahiyah Street,<br/>Abu Dhabi, UAE</p>
+                                </div>
+                            </div>
+                            <div class="contact-media-item">
+                                <label>EMAIL US</label>
+                                <div class="inner-media d-flex justify-content-center align-items-start gap-2">
+                                    <img src="images/media1.png" alt="" srcset="">
+                                    <p class="email">info@palettetowers.oyorooms.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-media-item ">
+                                <label>CALL NOW</label>
+                                <div class="inner-media d-flex justify-content-center align-items-start gap-2">
+                                    <img src="images/media2.png" alt="" srcset="">
+                                    <p class="email num">+971 44928889</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---Footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="foot-box">
+                            <div class="logo mb-3">
+                                <img src="images/darkLogo.png" alt="" srcset="">
+                            </div>
+                            <div class="footer-desc mb-3">
+                                <h3 class="foot-head mb-3">Find Your Perfect Palette!</h3>
+                                <p class="foot-cont">
+                                    From beachfront bliss to mountain retreats,  City chic to off-grid serenity,
+                                     there's a
+                                    Palette for every wanderer!
+                                </p>
+                            </div>
+                            <p class="bottom-cont">Book your stay and paint your own adventure today</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="phoneContent">
+                <div class="bottomFixed">
+                    <a href="tel:+97144928889" class="call-now"><img src="images/phone-call.png" alt=""> <span>Call to book</span></a>
+                    <a href="https://www.oyorooms.com/ae/" class="book-now" target="_blank"><img src="images/booking.png" alt=""> <span>Book now</span></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--owl car js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/touchpad-scroll-carousel/dist/touchpad-scroll-carousel.min.js"></script>
+
+    <!--bs-js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <script src="js/app.js"></script>
+    <!-- <script src="cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
+
+
+    <script></script>
+</body>
+
+</html>
+<script>
+    function formSubmit() {
+        $("#name_error").hide();
+        $("#mobile_error").hide();
+        $("#name").removeClass('error');
+        $("#mobile").removeClass('error');
+        var valid = true;
+        if ($("#name").val() == '') {
+            $("#name").addClass('error');
+            $("#name_error").show();
+            valid = false;
+        }
+
+        var mobNum = $("#mobile").val();
+        //var filter = /^\d*(?:\.\d{1,2})?$/;	
+        //if(filter.test(mobNum) && mobNum.length==10)
+        if (mobNum.length > 10 || mobNum.length < 10) {
+            $("#mobile").addClass('error');
+            $("#mobile_error").show();
+            valid = false;
+        }
+        if (valid) 
+		{
+			$.ajax({
+				type: "POST",
+				url: "contactus.php",
+				data: "name="+$("#name").val()+"&mobile="+mobNum, // serializes the form's elements.
+				success: function(data)
+				{
+				 $("#getForm").hide();
+				 $("#getFormSubmit").show();
+				}
+			});            
+        }
+    }
+    function submitanother() 
+	{
+        $("#name").val("");
+        $("#mobile").val("");
+        $("#getForm").show();
+        $("#getFormSubmit").hide();
+    }
+</script>
